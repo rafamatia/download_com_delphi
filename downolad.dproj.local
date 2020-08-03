@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2019/02/19 21:36:33.000.662,=C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/02/19 21:45:03.000.345,=C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/02/22 21:52:13.000.668,=C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/02/22 21:57:32.000.911,=C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/02/22 23:58:57.000.308,=C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/06/28 19:46:18.000.063,=C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2019/07/17 12:43:02.000.893,=C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/03/26 14:50:39.000.292,=C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2020/03/26 14:50:39.000.423,=C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\ServerContainerUnit1.pas</Transaction>
+    <Transaction>2020/03/26 14:50:39.000.151,=C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/03/26 14:56:09.000.748,=C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2020/03/26 14:56:09.000.961,=C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\ServerContainerUnit1.pas</Transaction>
+    <Transaction>2020/03/26 14:56:09.000.577,=C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/04/06 18:30:01.000.452,=C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/08/01 01:52:41.000.350,=C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/08/01 02:37:38.000.042,C:\desenvolvimento\softplan\untPrincipal.dfm=C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2020/08/01 02:37:38.000.042,C:\desenvolvimento\softplan\untPrincipal.pas=C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2020/08/01 02:38:05.000.234,C:\desenvolvimento\softplan\downolad.dproj=C:\Users\Rafael\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2020/08/01 02:54:26.000.570,=C:\desenvolvimento\softplan\uMensagens.pas</Transaction>
+    <Transaction>2020/08/01 03:01:42.000.791,=C:\desenvolvimento\softplan\uRotinas.pas</Transaction>
+    <Transaction>2020/08/01 03:03:05.000.195,C:\desenvolvimento\softplan\uRotinas.pas=</Transaction>
+    <Transaction>2020/08/01 03:03:41.000.688,=C:\desenvolvimento\softplan\uRotinasComuns.pas</Transaction>
+    <Transaction>2020/08/01 03:17:53.000.505,=C:\desenvolvimento\softplan\Unit1.pas</Transaction>
+    <Transaction>2020/08/01 03:18:20.000.409,C:\desenvolvimento\softplan\dmConexao.dfm=C:\desenvolvimento\softplan\Unit1.dfm</Transaction>
+    <Transaction>2020/08/01 03:18:20.000.409,C:\desenvolvimento\softplan\dmConexao.pas=C:\desenvolvimento\softplan\Unit1.pas</Transaction>
+    <Transaction>2020/08/01 03:18:31.000.974,C:\desenvolvimento\softplan\udmConexao.dfm=C:\desenvolvimento\softplan\dmConexao.dfm</Transaction>
+    <Transaction>2020/08/01 03:18:31.000.974,C:\desenvolvimento\softplan\udmConexao.pas=C:\desenvolvimento\softplan\dmConexao.pas</Transaction>
+    <Transaction>2020/08/01 03:42:41.000.204,=C:\desenvolvimento\softplan\uVariaveisPublicas.pas</Transaction>
+    <Transaction>2020/08/01 03:44:45.000.389,C:\desenvolvimento\softplan\uVariaveisPublicas.pas=</Transaction>
+    <Transaction>2020/08/01 03:58:36.000.578,=C:\desenvolvimento\softplan\Unit1.pas</Transaction>
+    <Transaction>2020/08/01 04:04:18.000.317,=C:\desenvolvimento\softplan\telas\untPrincipal.pas</Transaction>
+    <Transaction>2020/08/01 04:04:24.000.214,=C:\desenvolvimento\softplan\classes\uFabricaConexao.pas</Transaction>
+    <Transaction>2020/08/01 04:04:24.000.204,=C:\desenvolvimento\softplan\classes\uCriaQueryDinamica.pas</Transaction>
+    <Transaction>2020/08/01 04:04:30.000.991,=C:\desenvolvimento\softplan\units\uMensagens.pas</Transaction>
+    <Transaction>2020/08/01 04:04:31.000.000,=C:\desenvolvimento\softplan\units\uRotinasComuns.pas</Transaction>
+    <Transaction>2020/08/01 04:04:31.000.010,=C:\desenvolvimento\softplan\units\uVariaveisPublicas.pas</Transaction>
+    <Transaction>2020/08/01 04:04:39.000.901,=C:\desenvolvimento\softplan\dm\udmConexao.pas</Transaction>
+    <Transaction>2020/08/01 04:06:14.000.899,=C:\desenvolvimento\softplan\classes\uParametrosConexao.pas</Transaction>
+    <Transaction>2020/08/01 04:49:12.000.787,=C:\desenvolvimento\softplan\classes\uDAOConexao.pas</Transaction>
+    <Transaction>2020/08/01 04:51:28.000.151,C:\desenvolvimento\softplan\classes\uCriaQueryDinamica.pas=</Transaction>
+    <Transaction>2020/08/01 04:51:46.000.522,=C:\desenvolvimento\softplan\classes\uItemParDAO.pas</Transaction>
+    <Transaction>2020/08/01 04:54:36.000.396,C:\desenvolvimento\softplan\classes\uItemParDAO.pas=</Transaction>
+    <Transaction>2020/08/01 23:19:03.000.180,=C:\desenvolvimento\softplan\Unit1.pas</Transaction>
+    <Transaction>2020/08/01 23:19:41.000.936,C:\desenvolvimento\softplan\telas\untPrincipal.pas=C:\desenvolvimento\softplan\telas\untSolicitarDownload.pas</Transaction>
+    <Transaction>2020/08/01 23:19:41.000.936,C:\desenvolvimento\softplan\telas\untPrincipal.dfm=C:\desenvolvimento\softplan\telas\untSolicitarDownload.dfm</Transaction>
+    <Transaction>2020/08/01 23:20:26.000.567,C:\desenvolvimento\softplan\Unit1.dfm=C:\desenvolvimento\softplan\telas\untPrincipal.dfm</Transaction>
+    <Transaction>2020/08/01 23:20:26.000.567,C:\desenvolvimento\softplan\Unit1.pas=C:\desenvolvimento\softplan\telas\untPrincipal.pas</Transaction>
+    <Transaction>2020/08/01 23:22:35.000.951,C:\desenvolvimento\softplan\telas\untPrincipal.pas=</Transaction>
+    <Transaction>2020/08/01 23:36:03.000.087,=C:\desenvolvimento\softplan\Unit1.pas</Transaction>
+    <Transaction>2020/08/01 23:38:58.000.523,C:\desenvolvimento\softplan\Unit1.pas=C:\desenvolvimento\softplan\classes\uDownload.pas</Transaction>
+    <Transaction>2020/08/01 23:43:14.000.190,=C:\desenvolvimento\softplan\Unit1.pas</Transaction>
+    <Transaction>2020/08/01 23:43:21.000.269,=C:\desenvolvimento\softplan\Unit2.pas</Transaction>
+    <Transaction>2020/08/01 23:43:49.000.871,C:\desenvolvimento\softplan\Unit1.pas=C:\desenvolvimento\softplan\classes\uLogDownload.pas</Transaction>
+    <Transaction>2020/08/01 23:44:01.000.409,C:\desenvolvimento\softplan\Unit2.pas=C:\desenvolvimento\softplan\classes\uLogDownloadDAO.pas</Transaction>
+    <Transaction>2020/08/01 23:57:38.000.433,=C:\desenvolvimento\softplan\Unit1.pas</Transaction>
+    <Transaction>2020/08/01 23:57:59.000.343,C:\desenvolvimento\softplan\Unit1.pas=C:\desenvolvimento\softplan\classes\uLogDownload.interfaces.pas</Transaction>
+    <Transaction>2020/08/02 12:18:34.000.564,C:\desenvolvimento\softplan\units\uVariaveisPublicas.pas=</Transaction>
+    <Transaction>2020/08/02 22:27:58.000.952,C:\desenvolvimento\softplan\classes\uLogDownload.interfaces.pas=</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="classes"/>
+    <File Path="classes\uDAOConexao.pas"/>
+    <File Path="classes\uDownload.pas"/>
+    <File Path="classes\uFabricaConexao.pas"/>
+    <File Path="classes\uLogDownload.pas"/>
+    <File Path="classes\uLogDownloadDAO.pas"/>
+    <File Path="classes\uParametrosConexao.pas"/>
+    <File Path="dm"/>
+    <File Path="dm\udmConexao.pas"/>
+    <File Path="dm\udmConexao.dfm"/>
+    <File Path="telas"/>
+    <File Path="telas\untSolicitarDownload.pas"/>
+    <File Path="telas\untSolicitarDownload.dfm"/>
+    <File Path="units"/>
+    <File Path="units\uMensagens.pas"/>
+    <File Path="units\uRotinasComuns.pas"/>
+  </ProjectSortOrder>
+</BorlandProject>
