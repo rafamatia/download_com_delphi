@@ -18,6 +18,8 @@ implementation
 
 { TDAOConexao }
 
+uses uRotinasComuns;
+
 constructor TDAOConexao.Create;
 begin
   Conexao := TFabricaConexao.obterConexao;
@@ -27,9 +29,14 @@ end;
 
 destructor TDAOConexao.Destroy;
 begin
-  FreeAndNil(Qry);
-  Conexao.Connected := False;
-  FreeAndNil(Conexao);
+  if Assigned(Qry) then
+    FreeAndNil(Qry);
+
+  if Assigned(Conexao) then
+  begin
+    Conexao.Connected := False;
+    FreeAndNil(Conexao);
+  end;
   inherited;
 end;
 

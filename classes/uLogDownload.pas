@@ -12,13 +12,14 @@ type
     FURL: String;
     FDATAINICIO: TDate;
     FDATAFIM: TDate;
-    FPERCENTUAL: Integer;
+    FCaminhoParaSalvar: String;
   public
     property CODIGO: Double read FCODIGO write FCODIGO;
     property URL: String read FURL write FURL;
     property DATAINICIO: TDate read FDATAINICIO write FDATAINICIO;
     property DATAFIM: TDate read FDATAFIM write FDATAFIM;
-    property PERCENTUAL: Integer read FPERCENTUAL write FPERCENTUAL;
+    property CaminhoParaSalvar: String read FCaminhoParaSalvar
+      write FCaminhoParaSalvar;
   end;
 
 implementation

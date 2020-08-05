@@ -86,8 +86,8 @@
         <AppEnableHighDPI>true</AppEnableHighDPI>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
-        <DCC_DcuOutput>C:\download_com_delphi\dcu\</DCC_DcuOutput>
-        <DCC_ExeOutput>C:\download_com_delphi\exe\</DCC_ExeOutput>
+        <DCC_DcuOutput>C:\desenvolvimento\softplan\dcu\</DCC_DcuOutput>
+        <DCC_ExeOutput>C:\desenvolvimento\softplan\exe\</DCC_ExeOutput>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
@@ -110,16 +110,14 @@
         <DCCReference Include="classes\uFabricaConexao.pas"/>
         <DCCReference Include="units\uMensagens.pas"/>
         <DCCReference Include="units\uRotinasComuns.pas"/>
-        <DCCReference Include="dm\udmConexao.pas">
-            <Form>dmConexao</Form>
-            <FormType>dfm</FormType>
-            <DesignClass>TDataModule</DesignClass>
-        </DCCReference>
         <DCCReference Include="classes\uParametrosConexao.pas"/>
         <DCCReference Include="classes\uDAOConexao.pas"/>
-        <DCCReference Include="classes\uDownload.pas"/>
         <DCCReference Include="classes\uLogDownload.pas"/>
         <DCCReference Include="classes\uLogDownloadDAO.pas"/>
+        <DCCReference Include="telas\untHistoricoDownload.pas">
+            <Form>uFrmHistoricoDownload</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>

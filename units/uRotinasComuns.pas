@@ -7,20 +7,17 @@ uses
   Forms, Registry, Data.DB, Vcl.Buttons, Vcl.StdCtrls, Vcl.DBCtrls,
   Vcl.Graphics, Vcl.ExtCtrls, System.IniFiles;
 
-var
-  strCaminhoConfiguracoes: String;
-
 // ROTINA QUE SETA O FOCO EM UM CAMPO PASSADO COMO PARAMETRO
 procedure procSetarFoco(const AComponente: TWinControl;
   const ASelecionarTexto: boolean = True);
 
-procedure procCarregarVariavelCaminhoConfiguracoes;
+function funcRecuperarCaminhoConfiguracoesDoBanco: String;
 
 function funcLerArquivoINI(const AArquivo, ASessao, AChave: string): string;
 
-
-
 implementation
+
+uses uMensagens;
 
 procedure procSetarFoco(const AComponente: TWinControl;
   const ASelecionarTexto: boolean);
@@ -38,6 +35,8 @@ begin
     if (AComponente is TLabeledEdit) then
       TLabeledEdit(AComponente).SelectAll;
   except
+    on E: Exception do
+      MensagemErro('Erro ao tentar focar no componente: ' + AComponente.Name);
   end;
 end;
 
@@ -53,9 +52,9 @@ begin
   end;
 end;
 
-procedure procCarregarVariavelCaminhoConfiguracoes;
+function funcRecuperarCaminhoConfiguracoesDoBanco: String;
 begin
-  strCaminhoConfiguracoes := ExtractFilePath(Application.ExeName) + 'config.ini';
+  result := ExtractFilePath(Application.ExeName) + 'config.ini';
 end;
 
 end.

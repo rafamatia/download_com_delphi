@@ -9,7 +9,7 @@ type
   TLogDownloadDAO = class(TDAOConexao)
   private
   public
-    function funcInserirOuAtualizar(ALogDownload: TLogDownload): Boolean;
+    procedure procInserirOuAtualizar(ALogDownload: TLogDownload);
     function funcProximoID: Double;
   end;
 
@@ -19,31 +19,31 @@ implementation
 
 uses uMensagens;
 
-function TLogDownloadDAO.funcInserirOuAtualizar(ALogDownload
-  : TLogDownload): Boolean;
+procedure TLogDownloadDAO.procInserirOuAtualizar(ALogDownload: TLogDownload);
 begin
-  Result := False;
-  Qry.Active := False;
+  if (ALogDownload.CODIGO = 0) then
+    ALogDownload.CODIGO := funcProximoID;
+
+  Qry.Close;
   Qry.SQL.Clear;
   try
     Qry.SQL.Text :=
-      'INSERT OR REPLACE INTO LOGDOWNLOAD (CODIGO,  URL,  DATAINICIO,  DATAFIM,  PERCENTUAL) '
-      + ' VALUES (:CODIGO, :URL, :DATAINICIO, :DATAFIM, :PERCENTUAL) ';
+      'INSERT OR REPLACE INTO LOGDOWNLOAD (CODIGO,  URL,  DATAINICIO,  DATAFIM) '
+      + ' VALUES (:CODIGO, :URL, :DATAINICIO, :DATAFIM) ';
     Qry.ParamByName('CODIGO').AsFloat := ALogDownload.CODIGO;
     Qry.ParamByName('URL').AsString := ALogDownload.URL;
     Qry.ParamByName('DATAINICIO').AsDateTime := ALogDownload.DATAINICIO;
     Qry.ParamByName('DATAFIM').AsDateTime := ALogDownload.DATAFIM;
-    Qry.ParamByName('PERCENTUAL').AsInteger := ALogDownload.PERCENTUAL;
 
     if (ALogDownload.DATAFIM = 0) then
       Qry.ParamByName('DATAFIM').Clear;
 
     Qry.ExecSql;
-    Result := True;
   except
     on E: Exception do
-      MensagemErro('Erro ao inserir/atualizar o registro!' + sLineBreak +
-        sLineBreak + 'Detalhes Técnicos:' + sLineBreak + E.Message)
+      raise Exception.Create('Erro ao inserir/atualizar o registro!' +
+        sLineBreak + sLineBreak + 'Informações Técnicas:' + sLineBreak +
+        E.Message);
   end;
 end;
 
@@ -62,9 +62,8 @@ begin
     Result := Qry.FieldByName('ID').AsFloat + 1;
   except
     on E: Exception do
-      MensagemErro('Não foi possível recuperar o ID para este download!' +
-        sLineBreak + sLineBreak + 'Detalhes técnicos:' + sLineBreak +
-        E.Message);
+      raise Exception.Create('Erro ao recuperar o próximo ID!' + sLineBreak +
+        sLineBreak + 'Informações Técnicas:' + sLineBreak + E.Message);
   end;
 end;
 
