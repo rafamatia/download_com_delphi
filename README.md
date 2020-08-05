@@ -48,5 +48,3 @@ Para executar o projeto, é necessário configurar o arquivo "config.ini", local
 - Versão 1.1 concluída em: 04/08/2020
 
 
-
-
