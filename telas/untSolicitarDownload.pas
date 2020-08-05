@@ -160,6 +160,7 @@ begin
         except
           on E: EIdUnknownProtocol do
           begin
+            btnIniciarDownload.Enabled := True;
             procAtualizarProgresso(0, 0);
             MensagemErro
               ('URL Inválida! Por favor, revise o link informado para o download e tente novamente. Caso o erro persista, entre em contato com o suporte técnico.'
@@ -168,11 +169,13 @@ begin
           end;
           on E: EAbort do
           begin
+            btnIniciarDownload.Enabled := True;
             if (tskDownload.Status = TTaskStatus.Canceled) then
               MensagemAviso('Download cancelado pelo usuários!');
           end;
           on E: Exception do
           begin
+            btnIniciarDownload.Enabled := True;
             MensagemErro('Erro ao realizar o download!' + sLineBreak +
               'Por favor, revise o link informado para o download e tente novamente. Caso o erro persista, entre em contato com o suporte técnico.'
               + sLineBreak + sLineBreak + 'Detalhes Técnicos:' + sLineBreak +
@@ -182,8 +185,11 @@ begin
       end);
   except
     on E: Exception do
+    begin
+      btnIniciarDownload.Enabled := True;
       MensagemErro('Erro ao realizar o download!' + sLineBreak + sLineBreak +
-        'Detalhes Técnicos:' + sLineBreak + E.Message)
+        'Detalhes Técnicos:' + sLineBreak + E.Message);
+    end;
   end;
 end;
 
